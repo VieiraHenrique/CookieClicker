@@ -5,6 +5,8 @@ const x2 = document.getElementById('x2');
 const pricex5 = document.getElementById('pricex5');
 const x5 = document.getElementById('x5');
 const auto = document.getElementById('auto');
+const bonusbutton = document.getElementById('bonus');
+const bonustimer = document.getElementById('bonustimer');
 
 let score = 0;
 let step = 1;
@@ -20,6 +22,7 @@ function display (){
     scoreDisplay.innerHTML = score;
     pricex2.innerHTML = pricex2value;
     pricex5.innerHTML = pricex5value;
+    
 }
 
 x2.addEventListener('click', () =>{
@@ -53,3 +56,22 @@ function autoclick(){
 }
 
 display();
+
+bonusbutton.addEventListener('click', () =>{
+    bonus();
+})
+function bonus() {
+    let timer = 10;
+    setInterval(function(){
+        bonustimer.innerHTML = timer;
+        if(timer > 0){
+            timer--;
+            
+            cookie.addEventListener('click', () =>{
+            
+            })
+        }
+    },1000)
+    clearInterval();
+    
+}

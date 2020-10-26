@@ -18,3 +18,10 @@
   padding: 10px 20px;
   cursor: pointer;
 }
+
+#bonus {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
