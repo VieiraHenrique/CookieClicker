@@ -61,17 +61,17 @@ bonusbutton.addEventListener('click', () =>{
     bonus();
 })
 function bonus() {
+    step = step*2;
     let timer = 10;
-    setInterval(function(){
+    let timer1 = setInterval(function(){
         bonustimer.innerHTML = timer;
-        if(timer > 0){
-            timer--;
-            
-            cookie.addEventListener('click', () =>{
-            
-            })
-        }
+        timer--;
     },1000)
-    clearInterval();
+   setTimeout(function bonusON() {
+    clearTimeout(timer1);
+    bonustimer.innerHTML = "";
+    step = step / 2; 
+  }, 11000);
+  
     
 }
