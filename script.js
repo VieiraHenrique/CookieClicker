@@ -7,11 +7,16 @@ const x5 = document.getElementById('x5');
 const auto = document.getElementById('auto');
 const bonusbutton = document.getElementById('bonus');
 const bonustimer = document.getElementById('bonustimer');
+const priceAuto = document.getElementById('price-auto');
+const priceBonus = document.getElementById('price-bonus');
+const perclick = document.getElementById('perclick')
 
 let score = 0;
 let step = 1;
-let pricex2value = 10;
-let pricex5value = 50;
+let pricex2value = 50;
+let pricex5value = 150;
+let priceAutoValue = 500;
+let priceBonusValue = 700;
 
 cookie.addEventListener('click', () =>{
     score += step;
@@ -22,12 +27,14 @@ function display (){
     scoreDisplay.innerHTML = score;
     pricex2.innerHTML = pricex2value;
     pricex5.innerHTML = pricex5value;
-    
+    priceAuto.innerHTML = priceAutoValue;
+    priceBonus.innerHTML = priceBonusValue;
+    perclick.innerHTML = step;
 }
 
 x2.addEventListener('click', () =>{
     if (score > pricex2value){
-        step *= 2;
+        step += 2;
         score -= pricex2value;
         pricex2value += 20
     } 
@@ -36,7 +43,7 @@ x2.addEventListener('click', () =>{
 
 x5.addEventListener('click', () =>{
     if (score > pricex5value){
-        step *= 5;
+        step += 5;
         score -= pricex5value;
         pricex5value += 50
     }
@@ -44,7 +51,22 @@ x5.addEventListener('click', () =>{
 })
 
 auto.addEventListener('click', () =>{
-    autoclick();
+    if (score > priceAutoValue){
+        score -= priceAutoValue;
+        priceAutoValue += 50;
+        autoclick();
+    }
+    
+    display()
+})
+
+bonusbutton.addEventListener('click', () =>{
+    if (score > priceBonusValue){
+        score -= priceBonusValue;
+        priceBonusValue += 100;
+        bonus();
+    }
+    display();
 })
 
 function autoclick(){
@@ -57,12 +79,10 @@ function autoclick(){
 
 display();
 
-bonusbutton.addEventListener('click', () =>{
-    bonus();
-})
+
 function bonus() {
     step = step*2;
-    let timer = 10;
+    let timer = 30;
     let timer1 = setInterval(function(){
         bonustimer.innerHTML = timer;
         timer--;
@@ -71,7 +91,7 @@ function bonus() {
     clearTimeout(timer1);
     bonustimer.innerHTML = "";
     step = step / 2; 
-  }, 11000);
+  }, 31000);
   
     
 }
