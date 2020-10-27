@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 html {
   font-size: 10px;
@@ -8,12 +8,12 @@ body {
   background: url(img/bg2.png);
   background-size: cover;
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
 }
 
 #x2 {
-  background-color: #3DA1D8;
+  background-color: #3da1d8;
   color: white;
   padding: 2rem 4rem;
   cursor: pointer;
@@ -22,7 +22,7 @@ body {
 }
 
 #x5 {
-  background-color: #3DA1D8;
+  background-color: #3da1d8;
   color: white;
   padding: 2rem 4rem;
   cursor: pointer;
@@ -31,7 +31,7 @@ body {
 }
 
 #auto {
-  background-color: #3DA1D8;
+  background-color: #3da1d8;
   color: white;
   padding: 2rem 4rem;
   cursor: pointer;
@@ -40,7 +40,7 @@ body {
 }
 
 #bonus {
-  background-color: #3DA1D8;
+  background-color: #3da1d8;
   color: white;
   padding: 2rem 4rem;
   cursor: pointer;
@@ -66,7 +66,7 @@ h1 {
 }
 
 .blue {
-  color: #3DA1D8;
+  color: #3da1d8;
 }
 
 .cookie {
@@ -78,7 +78,6 @@ h1 {
 .score {
   font-size: 3rem;
   margin-top: 1rem;
-
 }
 
 .score p {

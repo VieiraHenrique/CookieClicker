@@ -94,7 +94,7 @@ function bonus() {
     },1000)
    setTimeout(function bonusON() {
     clearTimeout(timer1);
-    bonusbutton.removeAttribute('disabled')
+    bonusbutton.removeAttribute('disabled',)
     bonustimer.innerHTML = "";
     step = step / 2; 
   }, 31000);
