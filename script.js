@@ -9,7 +9,8 @@ const bonusbutton = document.getElementById('bonus');
 const bonustimer = document.getElementById('bonustimer');
 const priceAuto = document.getElementById('price-auto');
 const priceBonus = document.getElementById('price-bonus');
-const perclick = document.getElementById('perclick')
+const perclick = document.getElementById('perclick');
+const sound = document.getElementById('audio');
 
 let score = 0;
 let step = 1;
@@ -81,6 +82,9 @@ display();
 
 
 function bonus() {
+    sound.pause();
+    sound.currentTime = 0;
+    sound.onloadeddata = sound.play()
     step = step*2;
     let timer = 30;
     let timer1 = setInterval(function(){
