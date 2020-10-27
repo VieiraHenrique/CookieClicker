@@ -85,6 +85,7 @@ function bonus() {
     sound.pause();
     sound.currentTime = 0;
     sound.onloadeddata = sound.play()
+    bonusbutton.setAttribute('disabled', true)
     step = step*2;
     let timer = 30;
     let timer1 = setInterval(function(){
@@ -93,6 +94,7 @@ function bonus() {
     },1000)
    setTimeout(function bonusON() {
     clearTimeout(timer1);
+    bonusbutton.removeAttribute('disabled')
     bonustimer.innerHTML = "";
     step = step / 2; 
   }, 31000);
