@@ -1,3 +1,5 @@
+/* Definition des constantes */
+
 const cookie = document.getElementById('cookie');
 const scoreDisplay = document.getElementById('score');
 const pricex2 = document.getElementById('pricex2');
@@ -12,7 +14,7 @@ const priceBonus = document.getElementById('price-bonus');
 const perclick = document.getElementById('perclick');
 const sound = document.getElementById('audio');
 
-/* on a ete recherche toutes les constantes qu on avait besoin */
+/* definition des variable ceci definisse le score, le cookie par click, le prix pour le bonus x2, bonus x5, auto click, et le bonus. */
 
 let score = 0;
 let step = 1;
@@ -21,14 +23,14 @@ let pricex5value = 150;
 let priceAutoValue = 500;
 let priceBonusValue = 700;
 
-/* definition des variable ceci definisse le score, le cookie par click, le prix pour le bonus x2, bonus x5, auto click, et le bonus. */
+/* defini que le score dont augmenter a chaque click */
 
 cookie.addEventListener('click', () =>{
     score += step;
     display();
-})
+});
 
-/* defini que le score dont augmenter a chaque fois qu un click est effectuer */
+/* defini les nombres qui vont apparaitre comme pour le score le cookie par click, etc ... */
 
 function display (){
     scoreDisplay.innerHTML = score;
@@ -37,7 +39,11 @@ function display (){
     priceAuto.innerHTML = priceAutoValue;
     priceBonus.innerHTML = priceBonusValue;
     perclick.innerHTML = step;
-}
+};
+
+/* cette fonction defini que le score doit etre superieur a la valeur du bonus pour etre activable et y ajoute sa valeur a l ecran */
+/* cette fonction defini que au click du bonus x2 le cookie par click sera augmenter de 2.
+On lui indique aussi qu on doit deduire du score le prix pour debloque cette augmentation */
 
 x2.addEventListener('click', () =>{
     if (score > pricex2value){
@@ -46,7 +52,12 @@ x2.addEventListener('click', () =>{
         pricex2value += 20
     } 
     display();
-})
+});
+
+/* cette fonction defini que le score doit etre superieur a la valeur du bonus pour etre activable et y ajoute sa valeur a l ecran.
+
+Cette fonction defini que au click du bonus x5 le cookie par click sera augmenter de 5.
+On lui indique aussi qu on doit deduire du score le prix pour debloque cette augmentation */
 
 x5.addEventListener('click', () =>{
     if (score > pricex5value){
@@ -55,7 +66,9 @@ x5.addEventListener('click', () =>{
         pricex5value += 50
     }
     display(); 
-})
+});
+
+/* cette fonction defini que le score doit etre superieur a la valeur du bonus pour etre activable et y ajoute sa valeur a l ecran */
 
 auto.addEventListener('click', () =>{
     if (score > priceAutoValue){
@@ -65,7 +78,9 @@ auto.addEventListener('click', () =>{
     }
     
     display()
-})
+});
+
+/* cette fonction defini que le score doit etre superieur a la valeur du bonus pour etre activable et y ajoute sa valeur a l ecran */
 
 bonusbutton.addEventListener('click', () =>{
     if (score > priceBonusValue){
@@ -74,7 +89,9 @@ bonusbutton.addEventListener('click', () =>{
         bonus();
     }
     display();
-})
+});
+
+/* fonction definissant que le score doit etre augmenter de 1 toutes les 1000 secondes */
 
 function autoclick(){
     setInterval(function(){
@@ -86,6 +103,9 @@ function autoclick(){
 
 display();
 
+/* dans celle-ci on y ajouter un son qui se declenchera qu au click sur ce bonus, que le cookie par click est doublé pendant une durée de 30 secondes, qu un chronometre affichera le decompte, qu a ce meme click le bouton passera en rouge, ainsi que rendre le bouton indisponible pendant ce lapse de temps.
+
+ensuite on remet le bouton pour qu'il sont clickable on remet le bonus a 0 et on lui remet sa couleur d origine ainsi que le cookie par seconde qui ne sera plus doublé*/
 
 function bonus() {
     sound.pause();
