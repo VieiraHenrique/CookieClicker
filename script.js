@@ -12,6 +12,8 @@ const priceBonus = document.getElementById('price-bonus');
 const perclick = document.getElementById('perclick');
 const sound = document.getElementById('audio');
 
+/* on a ete recherche toutes les constantes qu on avait besoin */
+
 let score = 0;
 let step = 1;
 let pricex2value = 50;
@@ -19,10 +21,14 @@ let pricex5value = 150;
 let priceAutoValue = 500;
 let priceBonusValue = 700;
 
+/* definition des variable ceci definisse le score, le cookie par click, le prix pour le bonus x2, bonus x5, auto click, et le bonus. */
+
 cookie.addEventListener('click', () =>{
     score += step;
     display();
 })
+
+/* defini que le score dont augmenter a chaque fois qu un click est effectuer */
 
 function display (){
     scoreDisplay.innerHTML = score;
