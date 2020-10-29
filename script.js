@@ -17,7 +17,7 @@ let step = 1;
 let pricex2value = 50;
 let pricex5value = 150;
 let priceAutoValue = 500;
-let priceBonusValue = 20;
+let priceBonusValue = 700;
 
 cookie.addEventListener('click', () =>{
     score += step;
