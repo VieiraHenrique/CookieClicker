@@ -40,7 +40,7 @@ body {
 }
 
 #bonus {
-  background-color: #3da1d8;
+  background: #3da1d8;
   color: white;
   padding: 2rem 4rem;
   cursor: pointer;

@@ -17,7 +17,7 @@ let step = 1;
 let pricex2value = 50;
 let pricex5value = 150;
 let priceAutoValue = 500;
-let priceBonusValue = 700;
+let priceBonusValue = 20;
 
 cookie.addEventListener('click', () =>{
     score += step;
@@ -91,11 +91,13 @@ function bonus() {
     let timer1 = setInterval(function(){
         bonustimer.innerHTML = timer;
         timer--;
+        bonusbutton.style.background = 'rgb(202, 8, 8)';
     },1000)
    setTimeout(function bonusON() {
     clearTimeout(timer1);
-    bonusbutton.removeAttribute('disabled',)
+    bonusbutton.removeAttribute('disabled')
     bonustimer.innerHTML = "";
+    bonusbutton.style.background = '#3da1d8';
     step = step / 2; 
   }, 31000);
   
