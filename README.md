@@ -10,7 +10,7 @@ C'est un cookie clicker, un petit jeu fais en **javascript** où le but est simp
 
 ## Quand avez vous bossez dessus ?
 
-En Octobre 2020.
+En **Octobre** 2020.
 
 ## Que faisiez vous ?
 
@@ -26,4 +26,4 @@ Absolument pas vous avez juste besoin de cliquer sur ce lien : **https://vieirah
 
 ## D'où cela vient ?
 
-Ceci a été un exercice réalisé dans le cadre de notre formation.
+Ceci a été un _exercice_ réalisé dans le cadre de notre **formation**.
