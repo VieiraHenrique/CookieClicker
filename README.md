@@ -1,11 +1,29 @@
 # CookieClicker
 
-Bonjour,
-Nous devions presenter un clicker vous savez ces petits jeu, ou nous devons simplement cliquez pour gagnez des points ou affaiblir un ennemie et bien nous vous gagnez des cookies parce que on est gentils.
+## Qui etait sur le projet ?
 
-Alors tout d abords nous avons codé notre page index.html en alternance avec notre script nous voulions un site sans design mais operationnel dans un premier temps, une fois que tout le script s est revelé ok place a la partie design histoire de rentre tout ca tout frais tout beau rien que pour vous.
+_Henrique_, _Nathanaël_, _Abderrahman_, _Philippe_.
 
-Bref treve de bavardage il est tant maintenant pour vous d aller devore tout ces cookies sans devoir pensée a votre ligne !
+## Qu'est ce que c'est ?
 
-note personnel Philippe : la ou j'ai eu le plus de difficulte ca ete le 200% et ensuite de revenir aux click score un merci au groupe D
-Group E: Abderrahman, Nathanaël, Henrique, Philippe
+C'est un cookie clicker, un petit jeu fais en **javascript** où le but est simplement de clicker et d obtenir des points, pour pouvoir acheter des bonus qui nous donne encore plus de points.
+
+## Quand avez vous bossez dessus ?
+
+En Octobre 2020.
+
+## Que faisiez vous ?
+
+Ce projet a été réalise dans le cadre de notre formation de web developpeur a **Becode**.
+
+## A quoi cela ressemble t il ?
+
+![notre cookie clicker](img/screen.png)
+
+## Devons nous installer quelques choses ?
+
+Absolument pas vous avez juste besoin de cliquer sur ce lien : **https://vieirahenrique.github.io/CookieClicker/**.
+
+## D'où cela vient ?
+
+Ceci a été un exercice réalisé dans le cadre de notre formation.
